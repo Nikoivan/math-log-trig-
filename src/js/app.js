@@ -1,7 +1,6 @@
-import Character from "./character";
-import Magician from "./magician";
+import Character from './character';
 
-const magician = new Character("Ivan", "Magician");
+const magician = new Character('Ivan', 'Magician');
 
 magician.stoned = true;
 magician.setDistance(3);

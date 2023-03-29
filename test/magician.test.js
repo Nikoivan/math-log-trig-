@@ -1,10 +1,10 @@
-import Magician from "../src/js/magician";
+import Magician from '../src/js/magician';
 
-test("test for class Character", () => {
-  const result = new Magician("Matvey");
+test('test for class Character', () => {
+  const result = new Magician('Matvey');
   expect(result).toEqual({
-    name: "Matvey",
-    type: "Magician",
+    name: 'Matvey',
+    type: 'Magician',
     health: 100,
     level: 1,
     attach: 100,
