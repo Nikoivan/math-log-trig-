@@ -36,8 +36,8 @@ class Character {
     return this.unicStoned;
   }
 
-  set attack(obj) {
-    this.unicAttack = obj;
+  set attack(value) {
+    this.unicAttack = value;
   }
 
   get attack() {
