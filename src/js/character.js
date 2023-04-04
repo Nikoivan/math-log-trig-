@@ -29,6 +29,9 @@ class Character {
   }
 
   set stoned(value) {
+    if (typeof value !== 'boolean') {
+      throw new Error('Ошибка. Неправильный тип данных');
+    }
     this.unicStoned = value;
   }
 
@@ -37,6 +40,9 @@ class Character {
   }
 
   set attack(value) {
+    if (typeof value !== 'number') {
+      throw new Error('Ошибка. Неправильный тип данных');
+    }
     this.unicAttack = value;
   }
 

@@ -57,6 +57,13 @@ test('test for method setDistance  of class Character', () => {
   expect(magician.dist).toBe(2);
 });
 
+test('test for getter of stoned', () => {
+  const magician = new Character('Ivan', 'Magician');
+  magician.stoned = true;
+  const result = magician.stoned;
+  expect(result).toBe(true);
+});
+
 test('test for set stoned of class Character', () => {
   const magician = new Character('Ivan', 'Magician');
 
@@ -64,4 +71,18 @@ test('test for set stoned of class Character', () => {
   magician.setDistance(3);
   magician.attack = magician.attach;
   expect(magician.attack).toBe(7);
+});
+
+test('test for setter of stoned', () => {
+  const magician = new Character('Ivan', 'Magician');
+  expect(() => {
+    magician.stoned = 1;
+  }).toThrow('Ошибка. Неправильный тип данных');
+});
+
+test('test for setter of attack', () => {
+  const magician = new Character('Ivan', 'Magician');
+  expect(() => {
+    magician.attack = true;
+  }).toThrow('Ошибка. Неправильный тип данных');
 });
